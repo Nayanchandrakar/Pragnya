@@ -6,18 +6,24 @@ import {BiWalletAlt} from 'react-icons/bi'
 
 const About = () => {
     return(
-        <section className="pt-24 flex flex-col gap-12">
+        <section className="pt-24 flex flex-col gap-12 relative">
             <HeadingShortner
                 headline="About us"
                 paragraph="
                 Welcome to our revolutionary NFT platform, where art, technology, and innovation merge to create a remarkable digital experience. At [Platform Name], we are committed to empowering artists, collectors, and enthusiasts to participate in the exciting world of non-fungible tokens.
                 "
             />
-             
-             <div className="rounded-xl bg-white/[.1] backdrop-blur-2xl w-full h-full">
+             <div className="rounded-xl  bg-white/[.1] backdrop-blur-2xl w-full h-full">
 
+             <div className="w-full  h-full  absolute inset-0 z-0">
+                <img 
+                    src="/home/homemesh.png" 
+                    alt="home_mesh_gradient"
+                    className='w-full h-full object-cover ' 
+                />
+             </div>
                 {/* first div */}
-                <div className="flex flex-row justify-between items-center gap-4 sm:gap-0 px-8 sm:px-12 py-4  border-b-[3px] border-primary ">
+                <div className="flex z-10 relative flex-row justify-between items-center gap-4 sm:gap-0 px-8 sm:px-12 py-4  border-b-[3px] border-primary ">
                     <span className='flex flex-col items-center sm:items-start'>
                         <strong className='text-[5vw] xl:text-[4rem] text-white font-Poppins font-extrabold'>
                             1.5K+
@@ -40,7 +46,7 @@ const About = () => {
 
 
                 {/* second div */}
-                <div className="w-full h-full px-12 md:inline-block hidden ">
+                <div className="w-full z-10 relative h-full px-12 md:inline-block hidden ">
                     <div className="grid grid-cols-3 gap-8">
                         <span className='flex flex-col justify-start gap-4 border-r-[3px] border-primary py-14 pr-8'>
                             <BiWalletAlt

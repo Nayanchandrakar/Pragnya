@@ -9,16 +9,15 @@ import Navigation from './Navigation'
 const Navbar = () => {
 
 
-
     return(
         <header className="">
         <Container>
-        <nav className="flex py-4  flex-row h-fit w-full justify-between items-center">
+        <nav className="flex py-4 flex-row h-fit w-full justify-between items-center">
             {/* Logo */}
             <Logo/>
 
             {/* menu */}
-            <Navigation/>
+            {/* <Navigation/> */}
 
             {/* auth */}
             <Auth/>

@@ -1,19 +1,20 @@
 import Container from "../components/container/Container"
-import Gradient from "../components/home/Gradinet"
 import Button from "../components/button/Button"
 import About from "../components/home/About"
 import Websites from "../components/home/Websites"
-import { motion } from 'framer-motion'
+import { animate, motion } from 'framer-motion'
 
+import Footer from '../components/footer/Footer'
 const Home = () => {
-  return (
-    <div className="w-full h-full py-12 overflow-hidden">
+  return (<>
+    <div className="w-full h-full  py-12 overflow-hidden ">
 
       <Container>
         <div className="grid w-full h-fit grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-6">
+
           {/* grid one starts */}
           <motion.div 
-            className="flex justify-center flex-col gap-4"
+            className="flex justify-center flex-col relative gap-4 z-20"
             initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
@@ -23,7 +24,7 @@ const Home = () => {
                     delay: 0.2,
                 }}
           >
-            <span className="w-full text-[3rem] lg:text-[4rem] uppercase font-bold font_orbitron text-white">
+            <span className="w-full text-[3rem] lg:text-[4rem] uppercase font-bold font_orbitron antialiased  text-white">
               Discover collect sell digital nft.
             </span>
             <p className="text-zinc-300 text-lg font-semibold">
@@ -37,13 +38,13 @@ const Home = () => {
             >
               <Button isLoading={false} isColored label="Get Started" handleFunction={""} />
 
-              <Button isLoading={false}  label="Joinn Discord" handleFunction={""} />
+              <Button isLoading={false}  label="Join Discord" handleFunction={""} />
             </div>
           </motion.div>
 
           {/* grid two starts */}
           <motion.div 
-            className="w-full h-full"
+            className="w-full h-full relative"
             initial={{ x: 50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 animate={{ y: 0 }}
@@ -54,13 +55,44 @@ const Home = () => {
                     delay: 0.2,
                 }}
           >
-            <div className=" flex justify-center lg:justify-end items-center">
+
+
+             {/* absolute position div */}
+             <div className=" flex justify-center lg:justify-end w-[60rem] right-[-10rem]  h-full items-center rotate-12 absolute top-0 z-10">
             <img
+                alt="banner_image"
+                src="/home/mesh.png"
+                className="w-full opacity-80"
+            />
+            </div>
+
+
+
+
+            <motion.div 
+              className=" flex justify-center lg:justify-end items-center "
+            >
+            <motion.img
+            whileHover={{
+            }}
+                animate={{
+                  rotate: [0, 0, 90, 90, 0],
+                  scale: [1, 1.1, 1.1, 1, 1],
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  times: [0, 0.2, 0.5, 0.8, 1],
+                  repeat: Infinity,
+                }}
                 alt="banner_image"
                 src="/home/home.png"
                 className="w-[30rem] h-[30rem] object-contain"
             />
-            </div>
+            </motion.div>
+
+           
+            
           </motion.div>
         </div>
 
@@ -68,6 +100,8 @@ const Home = () => {
         <Websites/>
       </Container>
     </div>
+    <Footer/>
+    </>
   )
 }
 export default Home

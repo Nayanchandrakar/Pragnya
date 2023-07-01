@@ -40,3 +40,11 @@ export const projectdetails = [
         technologies: ["#react", "#styledcomp", "#firebase"],
     },
 ]
+
+
+
+export const NavigationContent = [
+    {id:23424, label:'Home', redirect:'/'},
+    {id:34563, label:'Home', redirect:'/'},
+    {id:343646, label:'Home', redirect:'/'},
+]
