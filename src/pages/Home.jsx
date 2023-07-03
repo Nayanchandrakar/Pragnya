@@ -24,8 +24,8 @@ const Home = () => {
                     delay: 0.2,
                 }}
           >
-            <span className="w-full text-[3rem] lg:text-[4rem] uppercase font-bold font_orbitron antialiased  text-white">
-              Discover collect sell digital nft.
+            <span className="w-full text-[2rem] lg:text-[3rem] uppercase font-bold font_orbitron antialiased  text-white">
+            An AI-Based Digital Platform for People with Barriers.
             </span>
             <p className="text-zinc-300 text-lg font-semibold">
               Generate 10,000+ NFT Collection Only by uploading the layers, and
@@ -38,7 +38,7 @@ const Home = () => {
             >
               <Button isLoading={false} isColored label="Get Started" handleFunction={""} />
 
-              <Button isLoading={false}  label="Join Discord" handleFunction={""} />
+              <Button isLoading={false}  label="Visit Site" handleFunction={""} />
             </div>
           </motion.div>
 
