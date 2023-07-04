@@ -3,22 +3,22 @@
 @tailwind utilities;
 
 
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #050816;
-  }
+  background-color: #ffffff;
+}
 
-.font_orbitron{
-    font-family: 'Orbitron', sans-serif;
+.font_orbitron {
+  font-family: 'Orbitron', sans-serif;
 }
 
 
-.custom_h1{
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);  
-    background-clip: text;
-    color: transparent;
-    background-color: white;
-  }
+.custom_h1 {
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-clip: text;
+  color: transparent;
+  background-color: white;
+}
