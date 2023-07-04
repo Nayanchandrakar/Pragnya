@@ -22,3 +22,7 @@ body {
   color: transparent;
   background-color: white;
 }
+
+.remove_scrollbar::-webkit-scrollbar {
+  display: none;
+}

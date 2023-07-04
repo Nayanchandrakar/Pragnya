@@ -27,8 +27,8 @@ const Home = () => {
                 An AI-Based Digital Platform for People with Barriers.
               </span>
               <p className="text-para/[.5] text-lg font-semibold">
-                Generate 10,000+ NFT Collection Only by uploading the layers,
-                and get ready to sell you collection.
+                Pragnya is a Digital platform that helps people with barriers
+                currently 10,000+ peoples get helped by pragnya join us today.
               </p>
 
               {/* div for button */}
