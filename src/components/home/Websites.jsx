@@ -16,7 +16,7 @@ const TiltComponent = ({ Heading, SubHeading, Content, index }) => {
 
   return (
     <>
-      <motion.div variants={fadeIn("down", "spring", delay, 0.75)}>
+      <div>
         <Tilt
           perspective={500}
           className="flex justify-center items-center flex-col overflow-hidden parallax-effect  "
@@ -85,7 +85,7 @@ const TiltComponent = ({ Heading, SubHeading, Content, index }) => {
             </NavLink>
           </div>
         </Tilt>
-      </motion.div>
+      </div>
     </>
   )
 }
