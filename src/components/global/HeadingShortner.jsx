@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const HeadingShortner = ({ MainHeadline, headline, paragraph, color }) => {
   return (
-    <motion.div variants={Slider()}>
+    <div>
       <div className="flex flex-col gap-2 ">
         {MainHeadline && (
           <span className="uppercase text-para font-bold text-lg">
@@ -43,7 +43,7 @@ const HeadingShortner = ({ MainHeadline, headline, paragraph, color }) => {
           </p>
         )}
       </div>
-    </motion.div>
+    </div>
   )
 }
 
